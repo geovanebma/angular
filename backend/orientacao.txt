@@ -1,0 +1,15 @@
+Aqui segue o passo a passo do que fazer no backend:
+
+1º - Na pasta atual, execute o comando npm init -y, para instalar as dependencias do angular
+2º - É necessário para que o angular funcione instalar em seguida o pacote json-server (npm i json-server)
+3º - Feito a instalação, é necessário no package.json colocar no "start" o seguinte comando: "json-server --watch db.json --port 3001" no caso 3001 é a porta que você quiser
+4º - No terminal para rodar esta operação digite npm start
+5º - Estará rodando na porta escolhida, após isso, execute algumas funções com o PostMan para testes
+6º - Quando abre o Postman, se estiver a porta sendo executada, coloque no link localhost:3001/products, depois mude para get para buscar as informações
+7º - Isso irá trazer as informações do objeto products dentro do arquivo db.json
+8º - Com POST pode colocar um valor novo: postman > Body > chave:valor > send
+9º - Com PUT, basca colocar o id do depois da barra para alterar tal localhost:3001/products/2
+
+Uma ação para começar com os módulos do Angular é instalando na pasta principal um módulo do node
+Esse módulo chama-se: npm i -g @angular/cli
+Ao instalar, você pode colocar um novo comando para criar o projeto, no caso usaremos ng new
